@@ -1,0 +1,21 @@
+def get_input(prompt):
+    return input(prompt + ": ")
+
+def mad_libs():
+    print("Welcome to Mad Libs!")
+    
+    # Collecting inputs from the user
+    noun1 = get_input("Enter a noun")
+    adjective1 = get_input("Enter an adjective")
+    verb1 = get_input("Enter a verb (past tense)")
+    noun2 = get_input("Enter another noun")
+    adverb1 = get_input("Enter an adverb")
+    
+    # Creating the story
+    story = f"Once upon a time, there was a {adjective1} {noun1} who loved to {verb1}. Every day, this {noun1} would {adverb1} go to the park with a {noun2}. The other animals at the park always admired the {adjective1} {noun1} for its unique style and cheerful attitude."
+    
+    print("\nHere's your Mad Libs story:\n")
+    print(story)
+
+if __name__ == "__main__":
+    mad_libs()
